@@ -11,12 +11,12 @@ Examples:
 let isDivisible = (n,x,y) => {
      if (n % x === 0) {
           if (n % y === 0) {
-               return `${n} is divisible by ${x} and ${y}` // according to question return true
+               return `${n} is divisible by ${x} and ${y}`; // according to question return true
           } else {
-               return `${n} is not divisible by ${y}` // return false
+               return `${n} is not divisible by ${y}`; // return false
           }
      } else {
-          return `${n} is neither divisible by ${x} nor ${y}` // return false
+          return `${n} is neither divisible by ${x} nor ${y}`; // return false
      }
 }
 
