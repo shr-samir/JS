@@ -11,24 +11,32 @@ Examples(Operator, value1, value2) --> output
 ('/', 49, 7) --> 7
 */
 
-let basicOp = (operator, v1, v2) => {
-     switch (operator) {
-          case '+':
-               return v1 + v2;
-               break;
-          case '-':
-               return v1 - v2;
-               break;
-          case '*':
-               return v1 * v2;
-               break;
-          case '/':
-               return v1 / v2;
-               break;
+// let basicOp = (operator, v1, v2) => {
+//      switch (operator) {
+//           case '+':
+//                return v1 + v2;
+//                break;
+//           case '-':
+//                return v1 - v2;
+//                break;
+//           case '*':
+//                return v1 * v2;
+//                break;
+//           case '/':
+//                return v1 / v2;
+//                break;
      
-          default:
-               break;
-     }
+//           default:
+//                break;
+//      }
+// }
+// console.log(basicOp('+', 2, 3));
+// console.log(basicOp('-', 2, 3));
+// console.log(basicOp('*', 2, 3));
+// console.log(basicOp('/', 2, 3));
+
+let basicOp = (operator, v1, v2) => {    // using eval()
+     return eval(v1 + operator + v2);
 }
 console.log(basicOp('+', 2, 3));
 console.log(basicOp('-', 2, 3));
